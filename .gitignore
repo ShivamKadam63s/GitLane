@@ -1,24 +1,27 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Rust build output
+src-tauri/target/
 
-node_modules
-dist
-dist-ssr
-*.local
+# Node modules
+node_modules/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Vite build output
+dist/
+
+# Tauri generated schemas
+src-tauri/gen/
+
+# Credentials file — never commit this
+src-tauri/../credentials.json
+**/credentials.json
+
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# VS Code local settings
+.vscode/settings.json
+.vscode/*.code-workspace
+
+# Environment files
+.env
+.env.local
