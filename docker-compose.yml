@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  gitlane-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: web-server
+    container_name: gitlane-web
+    ports:
+      - "3000:80"
+    restart: unless-stopped
